@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro</title>
+	<link rel="stylesheet" href="semantic.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="pomodoro.css">
+
+</head>
+<body>
+	<h1><strong>POMODORO</strong></h1>
+
+	<div class="counter">
+
+
+		<span id = "m">00</span>:<span id = "s">00</span>
+	</div>
+
+
+	<div class="button">
+
+		<button  onclick="timer.start()"> Play </button>
+		<button onclick="timer.pause()"> Pause </button>
+		<button  onclick="timer.raz()"> Stop </button>
+	</div>
+
+	<div class="chrono">
+
+	<button onclick="timer.pomodoro()">25:OO</button>
+	<button onclick="timer.Pause()">5:OO</button>
+	<button onclick="timer.superpause()">15:OO</button>
+	</div>
+
+	<form id="todoForm" action="#" onsubmit="todoList()">
+		 <input id="todoInput">
+			 <button type="button" onclick="todoList()">Click Me</button>
+		 <ul id="todoList">
+		 </ul>
+			 <button type="button" onclick="removeFinished()">Remove finished tasks</button>
+	 </form>
+
+
+</body>
+<script src="pomodoro.js "></script>
+
+</html>
