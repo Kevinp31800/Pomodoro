@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Pomodoro</title>
-	<link rel="stylesheet" href="semantic.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="semantic.min.css">
-	<link rel="stylesheet" type="text/css" href="pomodoro.css">
+	<link rel="stylesheet" href="semantic/semantic.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="semantic/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pomodoro.css">
 
 </head>
 <body>
@@ -27,21 +27,21 @@
 
 	<div class="chrono">
 
-	<button onclick="timer.pomodoro()">25:OO</button>
-	<button onclick="timer.Pause()">5:OO</button>
-	<button onclick="timer.superpause()">15:OO</button>
+		<button onclick="timer.pomodoro()">25:OO</button>
+		<button onclick="timer.Pause()">5:OO</button>
+		<button onclick="timer.superpause()">15:OO</button>
 	</div>
 
 	<form id="todoForm" action="#" onsubmit="todoList()">
-		 <input id="todoInput">
-			 <button type="button" onclick="todoList()">Click Me</button>
-		 <ul id="todoList">
-		 </ul>
-			 <button type="button" onclick="removeFinished()">Remove finished tasks</button>
-	 </form>
+		<input id="todoInput">
+		<button type="button" onclick="todoList()">Click Me</button>
+		<ul id="todoList">
+		</ul>
+		<button type="button" onclick="removeFinished()">Remove finished tasks</button>
+	</form>
 
 
 </body>
-<script src="pomodoro.js "></script>
+<script src="js/pomodoro.js "></script>
 
 </html>
